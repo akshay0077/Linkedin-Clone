@@ -12,7 +12,7 @@ import { logout, selectUser } from '../redux/userSlice';
 import { auth } from '../firebase/firebase.js';
 
 function Header() {
-    const user = useSelector(selectUser)
+    useSelector(selectUser)
     const dispatch = useDispatch();
 
     const logoutOfApp = () => {
